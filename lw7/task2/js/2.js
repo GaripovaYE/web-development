@@ -1,5 +1,4 @@
-//calculateBinaryExp(str) вычисляет результат выражения формата 'операция число1 число2'
-function Calculate(symb, x, y){
+function calculate(symb, x, y){
   switch(symb){
     case '+':
       return x + y;
@@ -27,26 +26,15 @@ function isNumber(x){
 
 function calculateBinaryExp(str){ 
   const operations = '*/+-';	
-  let a, b;	
-  let err;
-  let oper = str[0];
-	
- if (operations.includes(oper) && (str.length > 4)){
-    str = str.substr(2, str.length);
-    let posSpace = str.indexOf(' ');
-    a = str.substring(0, posSpace);
-    b = str.substr(posSpace	, str.length);
-    if (isNumber(a) && isNumber(b)){
-      return Calculate(oper, Number(a), Number(b));
-    } else {
-      err = true;
-    }			
-  } else {
-    err = true;
-  }
-  if (err){
+  str = str.trim();
+  let expElements = str.split(/ +/);
+  if (operations.includes(expElements[0])){
+    if (isNumber(expElements[1]) && isNumber(expElements[2])){
+      return calculate(expElements[0], Number(expElements[1]), Number(expElements[2]));
+    }
     return NaN
   }
+  return NaN
 }
 
 function simplifyExpression(s){		
@@ -71,10 +59,9 @@ function calc(s){
     return calculateBinaryExp(s)
   } else {
     console.log('Error');
-	return NaN
   }
 }
 
-let str; // = "+ (/ 4  0 ) (* 4 (+ 1 1))";
+let str = ' +  (/ 4 (- (- 2 1) (+ 2 3))) (* 4 (+ 1 1))';
 
 console.log(calc(str));
