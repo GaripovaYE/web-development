@@ -64,12 +64,17 @@ function simplifyExpression(s){
 }
 
 function calc(s){ 
-  while (s.includes('(')){
-    s = simplifyExpression(s);
+  if (s != null){
+    while (s.includes('(')){
+      s = simplifyExpression(s);
+    }
+    return calculateBinaryExp(s)
+  } else {
+    console.log('Error');
+	return NaN
   }
-  return calculateBinaryExp(s)
 }
 
-let str = "+ (/ 4  0 ) (* 4 (+ 1 1))";
+let str; // = "+ (/ 4  0 ) (* 4 (+ 1 1))";
 
 console.log(calc(str));
