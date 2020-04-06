@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap&subset=cyrillic-ext');
+
+.main_block
+{
+    margin: 0 auto;
+    width: 960px;
+}
+
+.top_block
+{
+    margin-top: 100px;
+}
+
+.photo
+{
+    margin-right: 60px;
+}
+
+.quote_block
+{
+    background-image: url(../image/quotes.png);
+    width: 570px;
+    margin-top: 50px;
+    float: right;
+}
+
+.quote
+{
+    height: 87px;
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 0;
+    font-family: georgia;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 42px;
+    color: #848484;
+}
+
+.signature
+{
+    margin-top: 10px;
+    margin-left: 62px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: #333333;
+    line-height: 42px;
+}
+
+.favorits
+{
+    margin: 0 0;	
+    font-family: "Open Sans";
+    font-weight: semibold;
+    font-size: 24px;
+    width: 330px;
+    float: left;
+}
+
+.user_list_writers
+{
+    margin-top: 43px;
+    margin-bottom: 0px;
+    color: #15a98c;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.user_list_films
+{
+    margin-top: 43px;
+    margin-bottom: 0px;
+    color: #15a98c;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.user_list
+{
+    margin-top: 10px;
+    margin-left: -20px;
+    color: #555555;
+    font-family: Georgia;
+    font-size: 19px;
+    line-height: 36px;
+}
+
+.text_block
+{
+    margin: 0 0;
+    width: 570px;
+    float: right;
+}
+
+.name
+{
+    margin: 0 0; 
+    margin-top: 39px;	
+    margin-left: 4px;
+    font-family: "Open Sans";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    color: #333333;
+}
+
+.dash
+{
+    margin-top: 27px;
+}
+
+.paragraph
+{
+    margin-top: 40px;
+    width: 561px;
+    margin-left: 0px;
+    color: #555555;
+    font-family: Georgia;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+.hobby
+{
+    margin-top: 43px;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: "Open Sans";
+    font-weight: 400;	
+    letter-spacing: -1px;
+    line-height: 42px;
+    color: #333333;	
+}
+
+.text_hobby
+{
+    margin-top: 14px;
+    font-size: 19px;
+    line-height: 32px;
+    color: #555555;
+    font-family: "Georgia";
+}
+
+.rarr
+{
+    margin: 0 0;
+    margin-top: 43px;	
+}
+
+.rarr:after
+{
+    font-family: "Georgia";
+    font-size: 20px;
+    content: " →";
+    color: #15a98b;
+    clear: both;
+}
+	
+.ref
+{	
+    font-size: 19px;
+    font-family: "Georgia";
+    line-height: 32px;
+    color: #15a98b;
+}
