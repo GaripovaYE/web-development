@@ -19,14 +19,14 @@ function isNotValidData(data){
   if (data != null){
     if (typeof data == 'object'){
       if (data[0] != null){ // проверка, не пустой ли массив
-	    return (Array.isArray(data) && (!data.every(isValid))) // все элементы валидные
+        return (Array.isArray(data) && (!data.every(isValid))) // все элементы валидные
       }
-	  return true
+      return true
     }
     if (typeof data == 'number'){
       return false
     }
-	return true
+    return true
   }
   return true
 }
@@ -42,7 +42,7 @@ function isPrimeNumber(num){
     let i = 0
   
     while (i < numArray.length){
-      (isPrimeNum(numArray[i])) 
+      (isPrimeNum(numArray[i]) && (Number.isInteger(numArray[i]))) 
         ? console.log(numArray[i] + ' is prime number')
         : console.log(numArray[i] + ' is not prime number')
       i++;
