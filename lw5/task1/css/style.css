@@ -3,12 +3,13 @@
 .main_block
 {
     margin: 0 auto;
-    width: 960px;
+    width: 980px;
 }
 
 .top_block
 {
     margin-top: 100px;
+	margin-left: 20px;
 }
 
 .photo
@@ -61,8 +62,9 @@
 
 .user_list_writers
 {
+    margin: 0 0;
     margin-top: 43px;
-    margin-bottom: 0px;
+    margin-left: 20px;
     color: #15a98c;
     font-size: 24px;
     line-height: 33px;
@@ -72,8 +74,9 @@
 
 .user_list_films
 {
+    margin: 0 0;
     margin-top: 43px;
-    margin-bottom: 0px;
+    margin-left: 20px;
     color: #15a98c;
     font-size: 24px;
     line-height: 32px;
@@ -83,8 +86,8 @@
 
 .user_list
 {
+    margin: 0 0;
     margin-top: 10px;
-    margin-left: -20px;
     color: #555555;
     font-family: Georgia;
     font-size: 19px;
