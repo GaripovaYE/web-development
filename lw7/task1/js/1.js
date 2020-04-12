@@ -1,14 +1,16 @@
 function isPrimeNum(num){
-  let isPrime = true;
-  for (let j = 2; j < num; j++){
-    if (num % j == 0){
-      isPrime = false;
-      break;
+  if (Number.isInteger(num) && num > 1){ 
+    let isPrime = true;
+    for (let j = 2; j < num; j++){
+      if (num % j == 0){
+        isPrime = false;
+        break;
+      }
     }
+    return isPrime
+  } else {
+    return false
   }
-  return (num > 1) 
-           ? isPrime
-           : false
 }
 
 function isValid(numb){
@@ -19,32 +21,30 @@ function isNotValidData(data){
   if (data != null){
     if (typeof data == 'object'){
       if (data[0] != null){ // проверка, не пустой ли массив
-        return (Array.isArray(data) && (!data.every(isValid))) // все элементы валидные
+	    return (Array.isArray(data) && (!data.every(isValid))) // все элементы валидные
       }
-      return true
+	  return true
     }
     if (typeof data == 'number'){
       return false
     }
-    return true
+	return true
   }
   return true
 }
 
 function isPrimeNumber(num){  
   if (!isNotValidData(num)){
+	let numArray;
     if (typeof num == "number"){
-      let numArray = [num];
+      numArray = [num];
     } else {
-      let numArray = num;
+      numArray = num;
     }
-    let i = 0;
-  
-    while (i < numArray.length){
-      (isPrimeNum(numArray[i]) && (Number.isInteger(numArray[i]))) 
+    for (let i = 0; i < numArray.length; i++){
+      ((isPrimeNum(numArray[i]))) 
         ? console.log(numArray[i] + ' is prime number')
         : console.log(numArray[i] + ' is not prime number')
-      i++;
     }
   } else {
     console.log('Not valid data');
