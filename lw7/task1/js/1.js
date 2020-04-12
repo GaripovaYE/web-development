@@ -33,13 +33,12 @@ function isNotValidData(data){
 
 function isPrimeNumber(num){  
   if (!isNotValidData(num)){
-	let numArray;
     if (typeof num == "number"){
-      numArray = [num];
+      let numArray = [num];
     } else {
-      numArray = num;
+      let numArray = num;
     }
-    let i = 0
+    let i = 0;
   
     while (i < numArray.length){
       (isPrimeNum(numArray[i]) && (Number.isInteger(numArray[i]))) 
