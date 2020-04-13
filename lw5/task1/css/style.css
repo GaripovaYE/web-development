@@ -3,172 +3,128 @@
 .main_block
 {
     margin: 0 auto;
-    width: 980px;
+    width: 900px;
 }
 
 .top_block
 {
-    margin-top: 100px;
-    margin-left: 20px;
-}
-
-.photo
-{
-    margin-right: 60px;
+    margin: 100px 0 0 0;
 }
 
 .quote_block
 {
     background-image: url(../image/quotes.png);
-    width: 570px;
-    margin-top: 50px;
+    width: 510px;
+    margin: 50px 0 0 60px;
     float: right;
 }
 
 .quote
 {
     height: 87px;
-    margin-top: 70px;
-    margin-left: 60px;
-    margin-bottom: 0;
-    font-family: georgia;
-    font-size: 28px;
-    font-style: italic;
-    line-height: 42px;
+    margin: 70px 0 0 60px;
+    font: italic 28px/42px georgia;
     color: #848484;
 }
 
 .signature
 {
-    margin-top: 10px;
-    margin-left: 62px;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    color: #333333;
-    line-height: 42px;
+    margin: 10px 0 0 62px;
+    font: normal 600 16px/42px "Open Sans";
+    color: #333;
 }
 
+.information
+{
+    width: 960px;
+}
 .favorits
 {
-    margin: 0 0;	
-    font-family: "Open Sans";
-    font-weight: semibold;
-    font-size: 24px;
+    margin: 0;	
+    font-family: semibold 24px "Open Sans";
     width: 330px;
     float: left;
 }
 
 .user_list_writers
 {
-    margin: 0 0;
-    margin-top: 43px;
-    margin-left: 20px;
+    margin: 43px 0 0 0;
     color: #15a98c;
-    font-size: 24px;
-    line-height: 33px;
-    font-family: "Open Sans";
-    font-weight: 600;
+    font: 600 24px/33px "Open Sans";
 }
 
 .user_list_films
 {
-    margin: 0 0;
-    margin-top: 43px;
-    margin-left: 20px;
+    margin: 43px 0 0 0;
     color: #15a98c;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: "Open Sans";
-    font-weight: 600;
+    font: 600 24px/32px "Open Sans";
 }
 
 .user_list
 {
-    margin: 0 0;
-    margin-top: 10px;
-    color: #555555;
-    font-family: Georgia;
-    font-size: 19px;
-    line-height: 36px;
+    margin: 10px 0 0 0;
+    color: #555;
+    font: 19px/36px Georgia;
+    list-style-position: inside;
+    padding: 0;	
 }
 
 .text_block
 {
-    margin: 0 0;
+    margin: 0 0 0 60px;
     width: 570px;
     float: right;
 }
 
 .name
 {
-    margin: 0 0; 
-    margin-top: 39px;	
-    margin-left: 4px;
-    font-family: "Open Sans";
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1;
-    color: #333333;
+    margin: 39px 0 0 4px; 
+    font: bold 48px/1 "Open Sans";
+    color: #333;
 }
 
 .dash
 {
-    margin-top: 27px;
+    margin: 27px 0 0 0;
 }
 
 .paragraph
 {
-    margin-top: 40px;
-    width: 561px;
-    margin-left: 0px;
-    color: #555555;
-    font-family: Georgia;
-    font-size: 19px;
-    line-height: 32px;
+    margin: 40px 0 0 0;
+    color: #555;
+    font: 19px/32px Georgia;
 }
 
 .hobby
 {
-    margin-top: 43px;
-    margin-bottom: 0;
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 400;	
+    margin: 43px 0 0 0;
+    font: 400 36px/42px "Open Sans";
     letter-spacing: -1px;
-    line-height: 42px;
-    color: #333333;	
+    color: #333;	
 }
 
 .text_hobby
 {
-    margin-top: 14px;
-    font-size: 19px;
-    line-height: 32px;
-    color: #555555;
-    font-family: "Georgia";
+    margin: 14px 0 0 0;
+    font: 19px/32px "Georgia";
+    color: #555;
 }
 
-.rarr
+.ref::after
 {
-    margin: 0 0;
-    margin-top: 43px;	
-}
-
-.rarr:after
-{
-    font-family: "Georgia";
-    font-size: 20px;
-    content: " →";
+    font: 20px "Georgia";
+    content: "→";
     color: #15a98b;
-    clear: both;
+    position: absolute;
+    top: 5px;
+    left: 121px;
 }
 	
 .ref
 {	
-    font-size: 19px;
-    font-family: "Georgia";
-    line-height: 32px;
+    display: block;
+    margin: 43px 0 0 0;
+    font: 19px/32px "Georgia";
     color: #15a98b;
+    position: relative;
 }
