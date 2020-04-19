@@ -18,7 +18,7 @@ function isValid(numb){
 }
 
 function isValidData(data){
-  return (data == 'number') || Array.isArray(data)
+  return (typeof data == 'number') || Array.isArray(data)
 }
 
 function isPrimeNumber(num){  
