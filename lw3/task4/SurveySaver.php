@@ -20,22 +20,30 @@ function printSurveyToTextFile()
     $surveyInformation = getSurvey($keys);
     if ($surveyInformation["email"] !== NULL)
     {
-        $fileName ="data/" . $surveyInformation["email"].".txt";
-        $fp = fopen($fileName, "w+");
-        unset($surveyInformation["email"]);
-        if ($fp)
+        if (filter_var($surveyInformation["email"], FILTER_VALIDATE_EMAIL))
         {
-            foreach ($surveyInformation as $key => $value)
+            $fileName ="data/" . $surveyInformation["email"].".txt";
+            $fp = fopen($fileName, "w+");
+            unset($surveyInformation["email"]);
+            if ($fp)
             {
-                fwrite($fp, "$key: $value \r\n");
+                foreach ($surveyInformation as $key => $value)
+                {
+                    fwrite($fp, "$key: $value \r\n");
+                }
+                echo "file created";
             }
+            fclose($fp);
         }
-        fclose($fp);
+        else
+        {
+            echo "not valid email";
+        }
     }
-    // else
-    // {
-    //     echo "File not created";
-    // }
+    else
+    {
+        echo "email is empty";
+    }
     $endParametr = end($surveyInformation);
 }
 
