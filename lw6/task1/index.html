@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Jane Doe. Personal web-site</title>
     <link href="css/style.css" rel="stylesheet">
-    <link src="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <!-- <link src="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> -->
+    <link src="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>    
     <div class="background_image"></div>
@@ -64,7 +65,7 @@
         <div class="films">
           <div class="film_block">
             <img class="main_screen" src="image/films/the_shawshank_redemption.jpg" alt="Постер">
-            <div class="film_title">Побег из Шоушенка</div>
+            <h3>Побег из Шоушенка</h3>
             <p class="film_description">
               Успешный банкир Энди Дюфрейн обвинен в убийстве собственной жены и ее любовника. 
               Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, 
@@ -75,7 +76,7 @@
           </div>
           <div class="film_block">
             <img class="main_screen" src="image/films/awake.jpg" alt="Постер">
-            <div class="film_title">Наркоз</div>
+            <h3>Наркоз</h3>
             <p class="film_description">
               Клай Бересфорд вынужден лечь под нож. Однако в процессе операции на сердце он 
               неожиданно приходит в себя. Находясь в парализованном состоянии, будучи не в силах 
@@ -84,7 +85,7 @@
           </div>
           <div class="film_block">
             <img class="main_screen" src="image/films/insidious.jpg" alt="Постер">
-            <div class="film_title">Астрал</div>
+            <h3>Астрал</h3>
             <p class="film_description">
               Джош и Рене переезжают со своими детьми в новый дом, но не успевают толком 
               распаковать вещи, как начинаются странные события. Необъяснимо перемещаются 
@@ -95,7 +96,7 @@
           </div>
           <div class="film_block">
             <img class="main_screen" src="image/films/gravity.jpg" alt="Постер">
-            <div class="film_title">Гравитация</div>
+            <h3>Гравитация</h3>
             <p class="film_description">
               Доктор Райан Стоун, блестящий специалист в области медицинского инжиниринга, 
               отправляется в свою первую космическую миссию под командованием ветерана 
@@ -117,21 +118,21 @@
         <input required class="text_field" type="text" name="email" id="email">
         <label class="field_name" for="country">Откуда Вы?</label>
         <select class="select_country" name="country" id="country">
-          <option>Белоруссия</option>
-          <option>Грузия</option>
-          <option>Монголия</option>		  
-          <option selected>Россия</option>
-          <option>Украина</option>
+          <option value="Белоруссия">Белоруссия</option>
+          <option value="Грузия">Грузия</option>
+          <option value="Монголия">Монголия</option>		  
+          <option value="Россия" selected>Россия</option>
+          <option value="Украина">Украина</option>
         </select>
         <div>  
-          <label class="radio_name" for="gender">Ваш пол</br></label>
-          <input class="radio_checker" type="radio" name="gender" id="gender" value="male" checked>
-          <span class="radio_description">Мужской</span>
-          <input class="radio_checker" type="radio" name="gender" id="gender" value="female">
-          <span class="radio_description">Женский</span>
+          <div class="radio_name">Ваш пол</br></div>
+          <input class="radio_checker" type="radio" name="gender" id="male" value="male" checked>
+          <label class="radio_description" for="male">Мужской</label>
+          <input class="radio_checker" type="radio" name="gender" id="female" value="female">
+          <label class="radio_description" for="female">Женский</label>
         </div>
-        <div class="message_field_name">Ваше сообщение</div>
-        <textarea required name="message"></textarea>
+        <label class="message_field_name" for="message">Ваше сообщение</label>
+        <textarea required name="message" id="message"></textarea>
         <input type="submit" class="button_send" value="Отправить">
       </form>	
     </div>
