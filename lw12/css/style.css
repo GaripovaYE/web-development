@@ -1,0 +1,716 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column;    
+    max-width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu_button
+{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 21px 8px 20px;
+    font: 19px/32px "Georgia";
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.mabout::before
+{
+    content: url(../image/icons/about_me_icon_black.png);	
+}
+
+.menu_button:hover
+{
+    color: #f5f5f5;	
+    background-color: #15a98c;
+}
+
+.about::before
+{
+    content: url(../image/icons/about_me_icon_black.png);	
+}
+
+.about:hover::before
+{
+    content: url(../image/icons/about_me_icon_white.png);
+}
+
+.hobby::before
+{
+    content: url(../image/icons/hobby_icon_black.png);
+}
+
+.hobby:hover::before
+{
+    content: url(../image/icons/hobby_icon_white.png);
+}
+
+.films::before
+{
+    content: url(../image/icons/video_icon_black.png);
+}
+
+.films:hover::before
+{
+    content: url(../image/icons/video_icon_white.png);
+}
+
+.background_image
+{
+    margin: 50px auto 0px;
+    width: 100%;   
+    height: 330px;
+    position: absolute;  
+    background: url(../image/background.svg) center no-repeat;
+    z-index: -1;
+}
+
+.main_block
+{
+    width: 100%;
+    max-width: 960px;
+}
+
+.block_top
+{
+    max-width: 100%;
+    margin-top: 70px;    
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.photo
+{
+    margin-top: 15px;
+    display: block;
+    border-radius: 5px;
+    float: left;
+    max-width: 100%;
+    width: 30%;
+}
+
+.block_quote
+{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 5%;
+    float: left;
+}
+
+.quote
+{
+    margin: 0;
+    font: italic 21px/32px "Georgia";
+    color: #fff;	
+}
+
+.signature
+{
+    box-sizing: border-box;
+    padding: 0 3px; 
+    font: normal 600 12px/32px "Open Sans";
+    color: #f5f5f5;
+}
+
+.text_block
+{
+    max-width: 570px;
+    width: 60%;
+    float: right;
+}
+
+.name
+{
+    margin: 40px 0 0 4px; 
+    font: 700 36px/1 "Open Sans";
+    color: #333;
+}
+
+.dash
+{
+    margin: 20px 0 0 0;
+}
+
+.paragraph
+{
+    margin: 20px 0 0 0;
+    color: #555;
+    font: 16px/28px Georgia;
+}
+
+.favorits
+{
+    margin: 0;	
+    font-family: semibold 24px "Open Sans";
+    width: 35%;
+    max-width: 330px;
+    float: left;
+}
+
+.user_list_writers
+{
+    margin: 30px 0 0 0;
+    color: #15a98c;
+    font: 600 18px/24px "Open Sans";
+}
+
+.user_list_films
+{
+    margin: 30px 0 0 0;
+    color: #15a98c;
+    font: 600 18px/24px "Open Sans";
+}
+
+.user_list_marker
+{
+    margin: 10px 0 0 3px;
+    color: #555;
+    font: 14px/24px Georgia;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.user_list
+{
+    margin: 10px 0 0 0;
+    color: #555;
+    font: 14px/24px Georgia;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.point
+{
+    margin-left: -7px;
+}
+
+h2
+{    
+    font: 400 28px/36px "Open Sans";
+    color: #333;	
+}
+
+.hobby_block
+{
+    margin: 30px 0 0 -2px;
+}
+
+.text_hobby
+{
+    margin: 16px 0 0 0;
+    font: 16px/28px "Georgia";
+    color: #555;
+}
+
+.ref::after
+{
+    font: 20px "Georgia";
+    content: "→";
+    color: #15a98b;
+    position: absolute;
+    top: 5px;
+    left: 121px;
+}
+    
+.ref
+{	
+    display: block;
+    margin: 41px 0 0 0;
+    font: 19px/32px "Georgia";
+    color: #15a98b;
+    position: relative;
+}
+
+.block_top::after
+{
+    clear: both;
+}
+
+.text_block::after
+{
+    clear: both;
+}
+
+.background_films
+{
+    margin: 60px 0 0 0;
+    padding: 32px 0 60px 0;
+    background-color: #f9f9f9;
+    z-index: -1;
+}
+
+.block_about_films
+{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.films_title_block
+{
+    margin: 0;
+}
+
+.films_about
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.film_block
+{
+    margin: 34px 0 0 0;
+    width: 100%;  /**/
+    max-width: 285px; /**/
+}
+
+.main_screen
+{
+    border-radius: 5px;
+    width: 100%;
+}
+
+h3
+{
+    margin: 20px 0 0 0;
+    font: 700 22px/32px "Open Sans";
+    color: #333;
+}
+
+.film_description
+{
+    margin: 16px 0 0 0;
+    font: 16px/28px "Georgia";
+    color: #555;
+}
+
+.button_all_films
+{
+    display: block;
+    margin: 55px auto 0;
+    box-sizing: border-box;
+    width: 220px;
+    height: 50px;
+    padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    background-color: #15a98c;
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+} 
+
+.form_block
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.form_title
+{
+    justify-content: center;
+    margin: 44px auto 0;
+    font: 300 36px/42px "Open Sans";
+    color: #333;
+}
+
+.form_fields
+{
+    display: flex;
+    flex-direction: column;
+    margin: 43px auto 0;
+    max-width: 540px;
+    width: 100%;
+    justify-content: center;
+}
+
+.required_field_name
+{
+    display: block;
+    margin: 25px 0 0 0;
+    font: 400 20px/32px "Open Sans";
+    color: #333;
+}
+
+.field_name
+{
+    display: block;
+    margin: 26px 0 0 0;
+    font: 400 20px/32px "Open Sans";
+    color: #333;
+}
+
+.required_field_name::after, .message_field_name::after
+{
+    content: " *";
+    color: #ee0707;
+}
+
+.text_field
+{
+    margin: 2px 0 0 0;
+    max-width: 497px;
+    height: 46px;    
+    font: normal 400 18px/32px "Open Sans";
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;	
+    padding: 0 1.2rem;
+    justify-content: center;
+}
+
+.text_field:focus
+{
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+    outline: none;
+    font: normal 400 18px/32px "Open Sans";
+    padding: 0 1.2rem;
+}
+
+.select_country
+{
+    margin-top: 4px;
+    max-width: 540px;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    font: 400 18px/32px "Open Sans";
+    color: #555;
+    padding: 0 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../image/arrow_down.png) 97% 55% no-repeat;
+}
+
+.select_country select:focus
+{
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+    outline: none;
+}
+
+.radio
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio_checker
+{
+    margin: 14px 0 0 -3px;
+    padding: 0 30px 0 0;
+}
+
+.radio_name
+{
+    margin: 42px 0 0 0;
+    font: 400 20px/32px "Open Sans";
+    color: #333;
+}
+
+.radio_description
+{
+    display: block;
+    font: 400 18px/32px "Open Sans";
+    color: #333;
+    padding: 0 35px 0 4px;
+}
+
+.message_field_name	
+{
+    display: block;
+    margin: 34px 0 0 0;
+    font: 400 20px/32px "Open Sans";
+    color: #333;
+}
+
+textarea
+{
+    display: block;;
+    max-width: 503px;
+    font: 400 18px/32px "Open Sans";
+    height: 130px;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+    border: 2px solid #c9c9c9;
+    resize: none;
+    padding: .5rem 1rem;
+}
+
+textarea:focus
+{
+    border-radius: 3px;
+    border: 2px solid #15a98c;
+    outline: none;
+    font: 400 18px/32px "Open Sans";
+    color: #555;
+    padding: .5rem 1rem;	
+}
+
+.button_send
+{
+    margin: 50px 0 0 0;
+    width: 220px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 5px;
+    background-color: #15a98c;
+    font: 19px/32px "Georgia";
+    color: #f5f5f5;
+    outline: none;    
+}
+
+.footer_decoration
+{
+    margin: 50px 0 0 0;
+    font: 16px/32px "Georgia";
+    color: #555;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 16px 0;
+}
+
+@media screen and (min-width: 330px)
+{
+    .radio
+    {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and  (min-width: 410px)
+{
+    .menu_button
+    {        
+        padding: 10px 25%;
+    }
+
+    .block_top
+    {
+        margin-top: 100px;  
+    }
+
+    .photo
+    {
+        margin: 0;
+    }
+}
+
+@media screen and  (min-width: 610px)
+{
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .menu_button
+    {
+        padding: 10px 21px 8px 20px;
+    }
+
+    .block_top
+    {
+        margin-top: 110px;
+    }
+
+    .background_image
+    {
+        height: 320px;
+    }
+
+    .quote
+    {
+        font: italic 28px/42px "Georgia";
+        height: 150px;
+    }
+    
+    .signature
+    {
+        font: normal 600 16px/42px "Open Sans";
+    }
+
+    .user_list_writers
+    {
+        font: 600 20px/28px "Open Sans";
+    }
+    
+    .user_list_films
+    {
+        font: 600 20px/28px "Open Sans";
+    }
+
+    .user_list_marker
+    {
+        font: 16px/32px Georgia;
+    }
+
+    .user_list
+    {
+        font: 16px/32px Georgia;
+    }
+
+    h2
+    {    
+        font: 400 32px/38px "Open Sans";
+    }
+}
+
+@media and (min-width: 670px)
+{        
+    .name
+    {
+        font: 700 42px/1 "Open Sans";
+    }
+    
+    .paragraph
+    {
+        font: 19px/32px Georgia;
+    }
+    
+    h2
+    {    
+        font: 400 36px/42px "Open Sans";
+    }
+    
+    .text_hobby
+    {
+        font: 19px/32px "Georgia";
+    }
+
+    .form_title::before
+    {
+        content: url(../image/form_title_line.png);
+        position: relative;
+        right: 30px;
+        bottom: 11px;
+    }
+
+    .form_title::after
+    {
+        content: url(../image/form_title_line.png);
+        position: relative;
+        left: 30px;
+        bottom: 11px;
+    }
+    
+    .form_block
+    {
+        padding: 0 0;
+    }
+}
+
+@media screen and  (min-width: 960px)
+{
+    .main_block
+    {
+        margin: 0 auto;
+    }
+    .block_top
+    {
+        margin-top: 210px;        
+        width: 960px;   	
+    }
+
+    .background_image
+    {
+        height: 400px;
+    }
+
+    .block_quote
+    {
+        width: 630px;
+        padding: 26px 62px;
+    }
+
+    .quote
+    {
+        height: 86px;
+    }
+    
+    .text_block
+    {
+        width: 100%;
+    }
+
+    .name
+    {
+        margin: 52px 0 0 4px; 
+        font: 700 48px/1 "Open Sans";
+    }
+
+    .dash
+    {
+        margin: 28px 0 0 0;
+    }
+
+    .paragraph
+    {
+        margin: 40px 0 0 0;
+    }
+
+    .favorits
+    {
+        width: 330px;
+    }
+
+    .user_list_writers
+    {
+        margin: 45px 0 0 0;
+        font: 600 24px/32px "Open Sans";
+    }
+
+    .user_list_films
+    {
+        margin: 41px 0 0 0;
+        font: 600 24px/32px "Open Sans";
+    }
+
+    .user_list_marker
+    {
+        margin: 13px 0 0 3px;
+        font: 19px/36px Georgia;
+    }
+
+    .user_list
+    {
+        margin: 12px 0 0 0;
+        font: 19px/36px Georgia;
+    }
+
+    .hobby_block
+    {
+        margin: 42px 0 0 -2px;
+    }
+}
+
+@media screen and (min-width: 1220px)
+{
+    .block_about_films
+    {
+        margin: 0 auto;
+        width: 1200px;
+    }
+}
