@@ -1,0 +1,4 @@
+name: asdfg
+country: Россия
+gender: female
+message: asdfghjk,mnbvcxz
