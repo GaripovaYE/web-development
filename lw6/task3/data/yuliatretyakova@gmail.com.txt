@@ -1,1 +1,0 @@
-name: juli country: Грузия gender: female message: sdfghjk 
