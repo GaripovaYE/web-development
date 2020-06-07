@@ -1,8 +1,4 @@
-function drawKyle(x, y){
-    const canvas = document.getElementById('myCanvas');
-    const context = canvas.getContext('2d');  
-    x = x + 26;
-    y = y - 34;
+function Kyleslegs(x, y){
     //   ноги
     context.beginPath();
     context.strokeStyle = '#21847d';
@@ -27,8 +23,9 @@ function drawKyle(x, y){
     context.ellipse(x + 108, y + 350, 79, 6, 0, Math.PI, 0);
     context.stroke();
     context.fill();
+}
 
-    //   тело
+function KylesBody(x, y){//   тело
     context.beginPath();
     context.lineWidth = 2; 
     context.strokeStyle = '#ff6018';
@@ -40,7 +37,9 @@ function drawKyle(x, y){
     context.bezierCurveTo(x + 31, y + 320, x + 39, y + 289, x + 10, y + 301);
     context.stroke();
     context.fill();
+}
 
+function KylesClasp(x, y){
     //  застежка
     context.beginPath();
     context.lineWidth = 2; 
@@ -48,62 +47,68 @@ function drawKyle(x, y){
     context.moveTo(x + 108, y + 260);
     context.lineTo(x + 107, y + 331);
     context.stroke();
+}
 
-    //   карманы
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#6a3523';
-    context.rect(x + 59, y + 274, 28, 32);
-    context.moveTo(x + 59, y + 274);
-    context.lineTo(x + 73, y + 290);      
-    context.lineTo(x + 87, y + 274);
-    context.stroke();
-    
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#6a3523';
-    context.rect(x + 124, y + 273, 28, 32);
-    context.moveTo(x + 124, y + 273);
-    context.lineTo(x + 138, y + 289);      
-    context.lineTo(x + 152, y + 273);
-    context.stroke();
+function KylesPockets(x, y){
+        //   карманы
+        context.beginPath();
+        context.lineWidth = 2; 
+        context.strokeStyle = '#6a3523';
+        context.rect(x + 59, y + 274, 28, 32);
+        context.moveTo(x + 59, y + 274);
+        context.lineTo(x + 73, y + 290);      
+        context.lineTo(x + 87, y + 274);
+        context.stroke();
+        
+        context.beginPath();
+        context.lineWidth = 2; 
+        context.strokeStyle = '#6a3523';
+        context.rect(x + 124, y + 273, 28, 32);
+        context.moveTo(x + 124, y + 273);
+        context.lineTo(x + 138, y + 289);      
+        context.lineTo(x + 152, y + 273);
+        context.stroke();
+}
 
-    // рукава
-    context.beginPath();
-    context.strokeStyle = '#393035';
-    context.lineWidth = 1; 
-    context.moveTo(x + 40, y + 272);
-    context.lineTo(x + 32, y + 301);      
-    context.moveTo(x + 168, y + 273);
-    context.lineTo(x + 173, y + 301);
-    context.stroke();
+function KylesHands(x, y){
+        // рукава
+        context.beginPath();
+        context.strokeStyle = '#393035';
+        context.lineWidth = 1; 
+        context.moveTo(x + 40, y + 272);
+        context.lineTo(x + 32, y + 301);      
+        context.moveTo(x + 168, y + 273);
+        context.lineTo(x + 173, y + 301);
+        context.stroke();
+    
+        // кулаки
+        context.beginPath();
+        context.lineWidth = 1; 
+        context.strokeStyle = '#4bc53d';
+        context.fillStyle = '#4bc53d';
+        context.arc(x + 18, y + 306, 17, 0, 2 * Math.PI);
+        context.stroke();
+        context.fill();
+        
+        context.beginPath();
+        context.arc(x + 187, y + 312, 17, 0, 2 * Math.PI);
+        context.stroke();
+        context.fill();
+        
+        context.beginPath();
+        context.lineWidth = 2; 
+        context.strokeStyle = '#469243';
+        context.arc(x + 175, y + 307, 7, 0, 2 * Math.PI);
+        context.stroke();
+        context.fill();
+        
+        context.beginPath();
+        context.arc(x + 31, y + 302, 7, 0, 2 * Math.PI);
+        context.stroke();
+        context.fill();
+}
 
-    // кулаки
-    context.beginPath();
-    context.lineWidth = 1; 
-    context.strokeStyle = '#4bc53d';
-    context.fillStyle = '#4bc53d';
-    context.arc(x + 18, y + 306, 17, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.arc(x + 187, y + 312, 17, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#469243';
-    context.arc(x + 175, y + 307, 7, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.arc(x + 31, y + 302, 7, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
+function KylesCollar(x, y){
     // воротник
     context.beginPath();
     context.lineWidth = 2; 
@@ -124,7 +129,9 @@ function drawKyle(x, y){
     context.moveTo(x + 101, y + 256);
     context.lineTo(x + 117, y + 256);
     context.stroke();
+}
 
+function KylesHead(x, y){
     //   голова
     context.beginPath();     
     context.arc(x + 104, y + 150, 104, 0, 2 * Math.PI);
@@ -133,7 +140,9 @@ function drawKyle(x, y){
     context.fillStyle = '#ffedc4';
     context.stroke();
     context.fill();
+}
 
+function KylesCap(x, y){
     //   шапка
     context.beginPath();
     context.strokeStyle = '#50c63e';
@@ -186,8 +195,10 @@ function drawKyle(x, y){
     context.bezierCurveTo(x + 195, y + 130,  x + 107,  y + 110, x + 19, y + 129);
     context.stroke();
     context.fill();
+}
 
-    //   глаза
+function KylesEyes(x, y){
+        //   глаза
     context.beginPath();
     context.lineWidth = 3;
     context.strokeStyle = '#b9b1ab'; 
@@ -230,44 +241,58 @@ function drawKyle(x, y){
     context.moveTo(x + 162, y + 125);
     context.lineTo(x + 134, y + 112);
     context.stroke();
-
-    //   рот
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#312c30';
-    context.bezierCurveTo(x + 78, y + 215, x + 104, y + 213, x + 140, y + 215); // ->
-    context.bezierCurveTo(x + 140, y + 215, x + 133, y + 227, x + 110, y + 239); // -/
-    context.bezierCurveTo(x + 110, y + 239, x + 78, y + 221, x + 78, y + 215); // \-
-    context.stroke();
-    context.fill();
-
-    context.beginPath(); 
-    context.strokeStyle = '#fff';
-    context.fillStyle = '#fff'; 
-    context.bezierCurveTo(x + 83, y + 217, x + 110, y + 214, x + 138, y + 216); // ->
-    context.bezierCurveTo(x + 138, y + 216, x + 133, y + 228, x + 86, y + 221); // -/
-    context.bezierCurveTo(x + 86, y + 221, x + 84, y + 219, x + 83, y + 217); // \-
-    context.stroke();
-    context.fill();
-
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#312c30';
-    context.moveTo(x + 96, y + 215); 
-    context.lineTo(x + 95, y + 225);
-    context.moveTo(x + 110, y + 213); 
-    context.lineTo(x + 110, y + 225);
-    context.moveTo(x + 127, y + 213); 
-    context.lineTo(x + 123, y + 225);
-    context.stroke();
 }
 
-function drawSten(x, y){     
-    x = x - 40;
-    y = y - 18;
+function KylesMouth(x, y){
+        //   рот
+        context.beginPath();
+        context.lineWidth = 2; 
+        context.strokeStyle = '#312c30';
+        context.bezierCurveTo(x + 78, y + 215, x + 104, y + 213, x + 140, y + 215); // ->
+        context.bezierCurveTo(x + 140, y + 215, x + 133, y + 227, x + 110, y + 239); // -/
+        context.bezierCurveTo(x + 110, y + 239, x + 78, y + 221, x + 78, y + 215); // \-
+        context.stroke();
+        context.fill();
+    
+        context.beginPath(); 
+        context.strokeStyle = '#fff';
+        context.fillStyle = '#fff'; 
+        context.bezierCurveTo(x + 83, y + 217, x + 110, y + 214, x + 138, y + 216); // ->
+        context.bezierCurveTo(x + 138, y + 216, x + 133, y + 228, x + 86, y + 221); // -/
+        context.bezierCurveTo(x + 86, y + 221, x + 84, y + 219, x + 83, y + 217); // \-
+        context.stroke();
+        context.fill();
+    
+        context.beginPath();
+        context.lineWidth = 2; 
+        context.strokeStyle = '#312c30';
+        context.moveTo(x + 96, y + 215); 
+        context.lineTo(x + 95, y + 225);
+        context.moveTo(x + 110, y + 213); 
+        context.lineTo(x + 110, y + 225);
+        context.moveTo(x + 127, y + 213); 
+        context.lineTo(x + 123, y + 225);
+        context.stroke();
+}
+
+function drawKyle(x, y){
     const canvas = document.getElementById('myCanvas');
-    const context = canvas.getContext('2d');
-      
+    const context = canvas.getContext('2d');  
+    x = x + 26;
+    y = y - 34;
+    Kyleslegs(x, y);
+    KylesBody(x, y);
+    KylesClasp(x, y);
+    KylesPockets(x, y);
+    KylesHands(x, y);
+    KylesCollar(x, y);
+    KylesHead(x, y);
+    KylesCap(x, y);
+    KylesEyes(x, y);
+    KylesMouth(x, y);
+}
+
+function StenLegs(x, y){
     //   ноги
     context.beginPath();
     context.strokeStyle = '#3f77c9';
@@ -287,7 +312,9 @@ function drawSten(x, y){
     context.ellipse(x + 120, y + 343, 45, 7, -2 * Math.PI / 360, Math.PI, 0);
     context.stroke();
     context.fill();
+}
 
+function StenBody(x, y){
     //   тело
     context.beginPath();
     context.lineWidth = 2; 
@@ -300,7 +327,9 @@ function drawSten(x, y){
     context.bezierCurveTo(x + 77, y + 315, x + 85, y + 289, x + 56, y + 301);
     context.stroke();
     context.fill();
-    
+}
+
+function StenClaps(x, y){
     //  застежка
     context.beginPath();
     context.lineWidth = 2; 
@@ -326,43 +355,47 @@ function drawSten(x, y){
     context.arc(x + 143, y + 313, 2, 0, 2 * Math.PI);
     context.stroke();
     context.fill();
+}
 
-    // рукава
-    context.beginPath();
-    context.strokeStyle = '#393035';
-    context.lineWidth = 1; 
-    context.moveTo(x + 87, y + 268);
-    context.lineTo(x + 81, y + 301);      
-    context.moveTo(x + 213, y + 268);
-    context.lineTo(x + 219, y + 301);
-    context.stroke();
+function StenHands(x, y){
+     // рукава
+     context.beginPath();
+     context.strokeStyle = '#393035';
+     context.lineWidth = 1; 
+     context.moveTo(x + 87, y + 268);
+     context.lineTo(x + 81, y + 301);      
+     context.moveTo(x + 213, y + 268);
+     context.lineTo(x + 219, y + 301);
+     context.stroke();
+ 
+     // кулаки
+     context.beginPath();
+     context.lineWidth = 1; 
+     context.strokeStyle = '#ff1f3e';
+     context.fillStyle = '#ff1f3e';
+     context.arc(x + 70, y + 297, 16, 0, 2 * Math.PI);
+     context.stroke();
+     context.fill();
+     
+     context.beginPath();
+     context.arc(x + 232, y + 301, 16, 0, 2 * Math.PI);
+     context.stroke();
+     context.fill();
+     
+     context.beginPath();
+     context.lineWidth = 2; 
+     context.strokeStyle = '#ac4c4d';
+     context.arc(x + 219, y + 297, 6, 0, 2 * Math.PI);
+     context.stroke();
+     context.fill();
+     
+     context.beginPath();
+     context.arc(x + 81, y + 293, 6, 0, 2 * Math.PI);
+     context.stroke();
+     context.fill();
+}
 
-    // кулаки
-    context.beginPath();
-    context.lineWidth = 1; 
-    context.strokeStyle = '#ff1f3e';
-    context.fillStyle = '#ff1f3e';
-    context.arc(x + 70, y + 297, 16, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.arc(x + 232, y + 301, 16, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#ac4c4d';
-    context.arc(x + 219, y + 297, 6, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
-    context.beginPath();
-    context.arc(x + 81, y + 293, 6, 0, 2 * Math.PI);
-    context.stroke();
-    context.fill();
-    
+function StenCollar(x, y){
     // воротник
     context.beginPath();
     context.lineWidth = 2; 
@@ -376,7 +409,9 @@ function drawSten(x, y){
     context.ellipse(x + 187, y + 245, 36, 11, -54 * Math.PI / 360, 0, 2 * Math.PI);
     context.stroke();
     context.fill();
+}
 
+function StenHead(x, y){
     //   голова
     context.beginPath();     
     context.arc(x + 150, y + 150, 100, 0, 2 * Math.PI);
@@ -385,7 +420,9 @@ function drawSten(x, y){
     context.fillStyle = '#ffedc4';
     context.stroke();
     context.fill();
+}
 
+function StenCap(x, y){
     //   шапка
     context.beginPath();     
     context.arc(x + 150, y + 145, 100, Math.PI + Math.PI/30, -Math.PI/20);
@@ -431,7 +468,9 @@ function drawSten(x, y){
     context.bezierCurveTo(x + 45, y + 146, x + 45, y + 135, x + 45, y + 125);    // |-
     context.stroke();
     context.fill();
+}
 
+function StenEyes(x, y){
     //   глаза
     context.beginPath();
     context.strokeStyle = '#b9b1ab'; 
@@ -474,17 +513,9 @@ function drawSten(x, y){
     context.moveTo(x + 210, y + 133);
     context.lineTo(x + 184, y + 115);
     context.stroke();
+}
 
-    //   рот
-    context.beginPath();
-    context.lineWidth = 2; 
-    context.strokeStyle = '#312c30';
-    context.bezierCurveTo(x + 128, y + 215, x + 150, y + 213, x + 181, y + 214); // ->
-    context.bezierCurveTo(x + 181, y + 214, x + 169, y + 227, x + 156, y + 237); // -/
-    context.bezierCurveTo(x + 156, y + 237, x + 138, y + 225, x + 128, y + 215); // \-
-    context.stroke();
-    context.fill();
-
+function StenTeeth(x, y){
     context.beginPath(); 
     context.strokeStyle = '#fff';
     context.fillStyle = '#fff'; 
@@ -504,4 +535,35 @@ function drawSten(x, y){
     context.moveTo(x + 171, y + 213); 
     context.lineTo(x + 165, y + 225);
     context.stroke();
+}
+
+function StenMouth(x, y){
+        //   рот
+    context.beginPath();
+    context.lineWidth = 2; 
+    context.strokeStyle = '#312c30';
+    context.bezierCurveTo(x + 128, y + 215, x + 150, y + 213, x + 181, y + 214); // ->
+    context.bezierCurveTo(x + 181, y + 214, x + 169, y + 227, x + 156, y + 237); // -/
+    context.bezierCurveTo(x + 156, y + 237, x + 138, y + 225, x + 128, y + 215); // \-
+    context.stroke();
+    context.fill();
+    
+    StenTeeth(x, y);
+}
+
+function drawSten(x, y){     
+    x = x - 40;
+    y = y - 18;
+    const canvas = document.getElementById('myCanvas');
+    const context = canvas.getContext('2d');
+    
+    StenLegs(x, y);
+    StenBody(x, y);
+    StenClaps(x, y);
+    StenHands(x, y);
+    StenCollar(x, y);
+    StenHead(x, y);
+    StenCap(x, y);
+    StenEyes(x, y);
+    StenMouth(x, y);
 }
