@@ -19,7 +19,7 @@ body
     display: block;
     max-width: 100%;
     margin: 0;
-    padding: 10px 21px 8px 20px;
+    padding: 10px 30px 8px 30px;
     font: 19px/32px "Georgia";
     color: #333;
     text-decoration: none;
@@ -89,46 +89,43 @@ body
     margin-top: 70px;    
     overflow: hidden;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .photo
 {
-    margin-top: 15px;
+    margin: 15px auto 0;
     display: block;
     border-radius: 5px;
-    float: left;
     max-width: 100%;
-    width: 30%;
 }
 
 .block_quote
 {
-    width: 70%;
-    box-sizing: border-box;
-    padding: 0 5%;
-    float: left;
+    margin: 15px auto 0;
 }
 
 .quote
 {
-    margin: 0;
     font: italic 21px/32px "Georgia";
-    color: #fff;	
+    color: #333;
+    margin: 10px 5px 0;
 }
 
 .signature
 {
+    display: block;
     box-sizing: border-box;
-    padding: 0 3px; 
-    font: normal 600 12px/32px "Open Sans";
-    color: #f5f5f5;
+    margin-top: 5px;
+    font: normal 600 12px/32px "Open Sans";    
+    color: #333;
+    text-align: end;
 }
 
 .text_block
 {
-    max-width: 570px;
-    width: 60%;
+    width: 100%;
+    margin: 0 auto;
     float: right;
 }
 
@@ -155,39 +152,38 @@ body
 {
     margin: 0;	
     font-family: semibold 24px "Open Sans";
-    width: 35%;
     max-width: 330px;
     float: left;
 }
 
 .user_list_writers
 {
-    margin: 30px 0 0 0;
+    margin: 45px 0 0 0;
     color: #15a98c;
-    font: 600 18px/24px "Open Sans";
+    font: 600 20px/28px "Open Sans";
 }
 
 .user_list_films
 {
-    margin: 30px 0 0 0;
+    margin: 41px 0 0 0;
     color: #15a98c;
-    font: 600 18px/24px "Open Sans";
+    font: 600 20px/28px "Open Sans";
 }
 
 .user_list_marker
 {
-    margin: 10px 0 0 3px;
+    margin: 13px 0 0 3px;
     color: #555;
-    font: 14px/24px Georgia;
+    font: 16px/32px Georgia;
     padding: 0;
     list-style-position: inside;
 }
 
 .user_list
 {
-    margin: 10px 0 0 0;
+    margin: 12px 0 0 0;
     color: #555;
-    font: 14px/24px Georgia;
+    font: 16px/32px Georgia;
     padding: 0;
     list-style-position: inside;
 }
@@ -257,27 +253,28 @@ h2
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .films_title_block
 {
     margin: 0;
+    text-align: center;
 }
 
 .films_about
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    max-width: 285px;
+    margin: 0 auto;
 }
 
 .film_block
 {
     margin: 34px 0 0 0;
-    width: 100%;  /**/
-    max-width: 285px; /**/
+    width: 100%; 
+    max-width: 285px;
 }
 
 .main_screen
@@ -322,7 +319,7 @@ h3
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .form_title
@@ -487,16 +484,7 @@ textarea:focus
     color: #555;
     background-color: #f5f5f5;
     text-align: center;
-    padding: 16px 0;
-}
-
-@media screen and (min-width: 330px)
-{
-    .radio
-    {
-        display: flex;
-        flex-direction: row;
-    }
+    padding: 16px 30px;
 }
 
 @media screen and  (min-width: 410px)
@@ -509,11 +497,6 @@ textarea:focus
     .block_top
     {
         margin-top: 100px;  
-    }
-
-    .photo
-    {
-        margin: 0;
     }
 }
 
@@ -533,43 +516,23 @@ textarea:focus
 
     .block_top
     {
-        margin-top: 110px;
+        margin-top: 110px;        
+        padding: 0 60px;
     }
 
     .background_image
     {
-        height: 320px;
+        height: 400px;
     }
 
     .quote
     {
         font: italic 28px/42px "Georgia";
-        height: 150px;
     }
     
     .signature
     {
         font: normal 600 16px/42px "Open Sans";
-    }
-
-    .user_list_writers
-    {
-        font: 600 20px/28px "Open Sans";
-    }
-    
-    .user_list_films
-    {
-        font: 600 20px/28px "Open Sans";
-    }
-
-    .user_list_marker
-    {
-        font: 16px/32px Georgia;
-    }
-
-    .user_list
-    {
-        font: 16px/32px Georgia;
     }
 
     h2
@@ -578,7 +541,7 @@ textarea:focus
     }
 }
 
-@media and (min-width: 670px)
+@media screen and (min-width: 670px)
 {        
     .name
     {
@@ -620,18 +583,109 @@ textarea:focus
     {
         padding: 0 0;
     }
+
+    .block_about_films
+    {
+        margin: 0 auto;
+        width: calc(600px + 10%);
+    }
+
+    .films_title_block
+    {
+        margin: 0;
+        text-align: start;
+    }
+
+    .films_about
+    {
+        display: flex;
+        flex-direction: row;
+        max-width: calc(600px + 10%);
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .user_list_writers
+    {
+        margin: 45px 0 0 0;
+        color: #15a98c;
+        font: 600 24px/32px "Open Sans";
+    }
+
+    .user_list_films
+    {
+        margin: 41px 0 0 0;
+        color: #15a98c;
+        font: 600 24px/32px "Open Sans";
+    }
+
+    .user_list_marker
+    {
+        margin: 13px 0 0 3px;
+        color: #555;
+        font: 19px/36px Georgia;
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    .user_list
+    {
+        margin: 12px 0 0 0;
+        color: #555;
+        font: 19px/36px Georgia;
+        padding: 0;
+        list-style-position: inside;
+    }
 }
 
-@media screen and  (min-width: 960px)
+@media screen and (min-width: 760px)
+{
+    .photo
+    {
+        float: left; 
+        max-width: 100%;
+    }  
+
+    .block_quote
+    {
+        width: calc(100% - 330px);
+        box-sizing: border-box;
+        padding: 26px 0 0 62px ;
+        height: 350px;
+        float: left;
+    }
+
+    .quote
+    {
+        margin: 0;
+        color: #fff;	
+    }
+
+    .signature
+    {
+        display: block;
+        box-sizing: border-box;
+        padding: 0 3px; 
+        font: normal 600 12px/32px "Open Sans";
+        color: #f5f5f5;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1038px)
 {
     .main_block
     {
         margin: 0 auto;
     }
+
     .block_top
     {
         margin-top: 210px;        
-        width: 960px;   	
+        max-width: 960px;   
+        overflow: hidden;	
+        box-sizing: border-box;
     }
 
     .background_image
@@ -639,26 +693,68 @@ textarea:focus
         height: 400px;
     }
 
+    .photo
+    {
+        float: left;
+    }
+
+    .main_block
+    {
+        padding: 0;
+    }
+
+    .block_top
+    {
+        margin-top: 210px;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .block_top::after
+    {
+        clear: both;
+    }
+
+    .photo
+    {
+        margin: 0;
+        display: block;
+        border-radius: 5px;
+        float: left;
+    }
+
     .block_quote
     {
-        width: 630px;
-        padding: 26px 62px;
+        max-width: 630px;
+        
+        margin: 0;
+        box-sizing: border-box;
+        padding: 26px 0 0 62px;
+        height: 0%;
+        float: left;
     }
 
     .quote
     {
+        margin: 0;
         height: 86px;
+        font: italic 28px/42px "Georgia";
+        color: #fff;	
     }
-    
-    .text_block
+
+    .signature
     {
-        width: 100%;
+        box-sizing: border-box;
+        padding: 0 3px; 
+        font: normal 600 16px/42px "Open Sans";
+        color: #f5f5f5;
     }
 
     .name
     {
         margin: 52px 0 0 4px; 
         font: 700 48px/1 "Open Sans";
+        color: #333;
     }
 
     .dash
@@ -669,40 +765,60 @@ textarea:focus
     .paragraph
     {
         margin: 40px 0 0 0;
+        color: #555;
+        font: 19px/32px Georgia;
     }
 
     .favorits
     {
-        width: 330px;
+        margin: 0;	
+        font-family: semibold 24px "Open Sans";
+        max-width: 330px;
+        float: left;
     }
 
     .user_list_writers
     {
         margin: 45px 0 0 0;
+        color: #15a98c;
         font: 600 24px/32px "Open Sans";
     }
 
     .user_list_films
     {
         margin: 41px 0 0 0;
+        color: #15a98c;
         font: 600 24px/32px "Open Sans";
     }
 
     .user_list_marker
     {
         margin: 13px 0 0 3px;
+        color: #555;
         font: 19px/36px Georgia;
+        padding: 0;
+        list-style-position: inside;
     }
 
     .user_list
     {
         margin: 12px 0 0 0;
+        color: #555;
         font: 19px/36px Georgia;
+        padding: 0;
+        list-style-position: inside;
     }
 
-    .hobby_block
+    .point
     {
-        margin: 42px 0 0 -2px;
+        margin-left: -7px;
+    }
+
+    .text_block
+    {
+        max-width: 570px;
+        float: right;
+        width: 100%;
     }
 }
 
@@ -712,5 +828,18 @@ textarea:focus
     {
         margin: 0 auto;
         width: 1200px;
+        padding: 0;
+    }
+
+    .films_title_block
+    {
+        margin: 0;
+        text-align: start;
+    }
+
+    .films_about
+    {
+        max-width: 1200px;
+        justify-content: space-between;
     }
 }
