@@ -822,7 +822,7 @@ textarea:focus
     }
 }
 
-@media screen and (min-width: 1220px)
+@media screen and (min-width: 1250px)
 {
     .block_about_films
     {
@@ -840,6 +840,5 @@ textarea:focus
     .films_about
     {
         max-width: 1200px;
-        justify-content: space-between;
     }
 }
