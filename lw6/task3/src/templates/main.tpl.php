@@ -108,74 +108,9 @@
         <a class="button_all_films" href="">Все фильмы</a>
       </div>
     </div>
-    <div class="form_block">
-      <h2 class="form_title">НАПИШИ МНЕ</h2>
-        <form class="form_fields" method="POST" action="feedbacks.php" enctype="encodingType">
-
-          <?php if (isset($args['msg'])): ?>
-          <p><?php echo $args['msg']; ?></p>
-          <?php endif; ?> 
-
-          <label class="required_field_name" for="name">Ваше имя</label>
-          <input required 
-                 class=<?php echo (($args['name_error_msg']) != NULL)?"text_field_error": "text_field";?> 
-                 type="text" 
-                 name="name" 
-                 id="name" 
-                 value="<?php echo $args['name'] ?? ''; ?>">
-          <?php if (($args['email_error_msg']) != NULL): ?>
-          <p class="error_msg"><?php echo $args['name_error_msg']; ?></p>
-          <?php endif; ?> 
-
-          <label class="required_field_name" for="email">Ваш email</label>
-          <input required 
-                 class=<?php echo (($args['email_error_msg']) != NULL)?"text_field_error": "text_field";?>
-                 type="text" name="email" id="email" value="<?php echo $args['email'] ?? ''; ?>"> 
-          <?php if (($args['email_error_msg']) != NULL): ?>
-          <p class="error_msg"><?php echo $args['email_error_msg']; ?></p>
-          <?php endif; ?> 
-
-          <label class="field_name" for="country">Откуда Вы?</label>
-          <select class="select_country" name="country" id="country">
-            <option value="Белоруссия" 
-              <?php echo (($args['country'] == 'Белоруссия')) ? 'selected' : '';?>>Белоруссия</option>
-            <option value="Грузия" 
-              <?php echo (($args['country'] == 'Грузия')) ? 'selected' : '';?>>Грузия</option>
-            <option value="Монголия" 
-              <?php echo (($args['country'] == 'Монголия')) ? 'selected' : '';?>>Монголия</option>		  
-            <option value="Россия" 
-              <?php echo ($args['country'] != NULL) || (($args['country'] == 'Россия')) ? 'selected' : '';?>>Россия</option>
-            <option value="Украина" 
-              <?php (($args['country'] == 'Украина')) ? 'selected' : '';?>>Украина</option>
-          </select>
-          <div>  
-            <div class="radio_name">Ваш пол</div>
-            <input class="radio_checker" type="radio" name="gender" id="male" value="male"
-              <?php echo (($args['gender'] == 'male')) ? 'checked' : '';?>>
-            <label class="radio_description" for="male">Мужской</label>
-            <input class="radio_checker" type="radio" name="gender" id="female" value="female"  
-              <?php echo (($args['gender'] == 'female')) ? 'checked' : '';?>>
-            <label class="radio_description" for="female">Женский</label>
-          </div>
-          <label class="message_field_name" for="message">Ваше сообщение</label>
-          <textarea required name="message" id="message"><?php echo $args['message'] ?? ''; ?></textarea>
-          <input type="submit" class="button_send" value="Отправить">
-        </form>	
-      </div>
+    <? include('form.tpl.php'); ?>
     <footer class="footer_decoration">
       &#169; 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»
     </footer>
   </body>      
-</html>    
-<!-- 
-Тут должен быть html код главной страницы с php вставками, чтобы отобразить ошибки, например
-…
-<?php if (isset($args[‘email_error_msg’])): ?>
-    <p><?php echo $args[‘email_error_msg’]; ?></p>
-<?php endif; ?> 
-…
-Также можно использовать php вставки для отображения предыдущих значений формы
-…
-<input type=”email” name=”email” value=”<?php echo $args[‘email’] ?? ‘’; ?>)” />
-…
--->
+</html>

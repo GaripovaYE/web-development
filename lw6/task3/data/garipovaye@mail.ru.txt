@@ -1,0 +1,4 @@
+name: frgt
+country: Россия
+gender: female
+message: sadfghjk

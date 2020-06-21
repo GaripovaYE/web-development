@@ -548,3 +548,32 @@ textarea:focus
     padding: 0;
     margin: 0;
 }
+
+.result_msg_ok
+{    
+    font: 16px/24px "Georgia";
+    padding: 0 40px;
+    color: #15a98c;
+}
+
+.result_msg_err
+{    
+    font: 16px/24px "Georgia";
+    padding: 0 40px;
+    color: #ee0707;
+}
+
+.submit_result
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.ref_feedback
+{
+    display: block;
+    margin: 41px 0 0 0;
+    font: 19px/32px "Georgia";
+    color: #15a98b;
+}

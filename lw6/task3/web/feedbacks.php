@@ -1,4 +1,10 @@
 <?php
     require_once('../src/common.inc.php');
-    // feedbacksListPage();
-    saveFeedbackPage();
+    if (getRequestMethod() == 'POST')
+    {
+        feedbacksListPage();
+    }
+    else
+    {
+        feedbackPage();
+    }

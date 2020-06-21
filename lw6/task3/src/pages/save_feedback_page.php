@@ -19,8 +19,8 @@
     {
         $args = getFormData();
         $formData = $args;
-        $args['email_error_msg'] = (isValidEmail($args['email']) ? NULL : 'Ошибка ввода email');
-        $args['name_error_msg'] = (isValidName($args['name']) ? NULL : 'Ошибка ввода имени');
+        $args['email_error_msg'] = (isValidEmail($args['email']) ? NULL : 'error');
+        $args['name_error_msg'] = (isValidName($args['name']) ? NULL : 'error');
         if (($args['email_error_msg'] == NULL) && (($args['name_error_msg']) == NULL))
         {
             $formData['email'] = trim($formData['email']);
@@ -35,10 +35,10 @@
                 }
             }
             fclose($fp);
-            $args['result'] = 'Данные сохранены';
+            $args['result'] = 'ok';
         } else {
-            $args['result'] = 'Данные введены не корректно';
+            $args['result'] = 'error';
         }
         
         renderTemplate('main.tpl.php', $args);
-    }                    
+    }   
