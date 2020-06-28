@@ -1,0 +1,4 @@
+name: Рамиль
+country: Грузия
+gender: male
+message: Привет!

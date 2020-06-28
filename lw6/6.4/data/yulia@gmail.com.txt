@@ -1,0 +1,4 @@
+name: juli
+country: Россия
+gender: female
+message: hello

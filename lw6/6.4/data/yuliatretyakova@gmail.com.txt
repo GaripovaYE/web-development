@@ -1,0 +1,4 @@
+name: Юлия Гарипова
+country: Россия
+gender: female
+message: Hello
