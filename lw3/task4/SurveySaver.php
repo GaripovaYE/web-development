@@ -1,50 +1,49 @@
 <?php
 
-function getGETParameter(string $name): ?string
-{
-    return isset($_GET[$name]) ? $_GET[$name]: NULL;
-} 
-
-function getSurvey(array $keys): ?array
-{
-    foreach ($keys as $key) 
+    function getGETParameter(string $name): ?string
     {
-        $getAttributs[$key] = getGETParameter($key);
-    }
-    return $getAttributs;
-}
+        return isset($_GET[$name]) ? $_GET[$name]: NULL;
+    } 
 
-function printSurveyToTextFile()
-{    
-    $keys = array("first_name",  "last_name", "email", "age");
-    $surveyInformation = getSurvey($keys);
-    if ($surveyInformation["email"] !== NULL)
+    function getSurvey(array $keys): ?array
     {
-        if (filter_var($surveyInformation["email"], FILTER_VALIDATE_EMAIL))
+        foreach ($keys as $key) 
         {
-            $fileName ="data/" . $surveyInformation["email"].".txt";
-            $fp = fopen($fileName, "w+");
-            unset($surveyInformation["email"]);
-            if ($fp)
+            $getAttributs[$key] = getGETParameter($key);
+        }
+        return $getAttributs;
+    }
+
+    function printSurveyToTextFile()
+    {    
+        $keys = array("first_name",  "last_name", "email", "age");
+        $surveyInformation = getSurvey($keys);
+        if ($surveyInformation["email"] !== NULL)
+        {
+            if (filter_var($surveyInformation["email"], FILTER_VALIDATE_EMAIL))
             {
-                foreach ($surveyInformation as $key => $value)
+                $fileName = "../data/" . $surveyInformation["email"].".txt";
+                $fp = fopen($fileName, "w+");
+                if ($fp)
                 {
-                    fwrite($fp, "$key: $value \r\n");
+                    foreach ($surveyInformation as $key => $value)
+                    {
+                        fwrite($fp, "$key: $value \r\n");
+                    }
+                    echo "file created";
                 }
-                echo "file created";
+                fclose($fp);
             }
-            fclose($fp);
+            else
+            {
+                echo "not valid email";
+            }
         }
         else
         {
-            echo "not valid email";
+            echo "email is empty";
         }
+        $endParametr = end($surveyInformation);
     }
-    else
-    {
-        echo "email is empty";
-    }
-    $endParametr = end($surveyInformation);
-}
 
-printSurveyToTextFile();
+    printSurveyToTextFile();
