@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>SVG</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="350">
+    <g name="Kenny">
+      <g name="legs">
+        <rect name="pants" fill="#f56400" stroke="#f56400" stroke-width="7"
+              x="56" y="295" width="135" height="25"/>
+        <line name="shoes" fill="none" stroke="#2f2b3a" stroke-width="7" stroke-linecap="round"
+                    x1="49" y1="326" x2="198" y2="326"/>
+      </g>
+      <g name="shirt">
+        <path fill="#f56400" stroke="#f56400" stroke-width="3"
+              d="M 44 297 Q 125 320 205 297
+                 L 205 297 220 270 Q 230 260 203 210
+                 L 46 210 Q 20 250 20 270 L 50 270Z"/>
+        <line name="clasp" fill="none" stroke="#000" stroke-width="2"
+              x1="124" y1="246" x2="124" y2="310"/>
+      </g>
+      <g name="hands"> 
+        <line fill="none" stroke="#000" stroke-width="1" x1="49" y1="258" x2="46" y2="280" />
+        <circle fill="#854a1e" stroke="#854a1e" stroke-width="2" cx="28" cy="282" r="17"></circle>        
+        <circle fill="#854a1e" stroke="#000" stroke-width="1" stroke-opacity=".5" cx="41" cy="276" r="8"></circle>
+        
+        <line fill="none" stroke="#000" stroke-width="1" x1="194" y1="258" x2="197" y2="280" />
+        <circle fill="#854a1e" stroke="#854a1e" stroke-width="2" cx="215" cy="283" r="17"></circle>        
+        <circle fill="#854a1e" stroke="#000" stroke-width="1" stroke-opacity=".5" cx="201" cy="276" r="8"></circle>
+      </g>
+      <g name="head">
+          
+        <circle fill="#000" stroke="#000" opacity=".3" stroke-width="3" cx="125" cy="125" r="118"></circle>
+        <circle fill="#f56400" stroke="#f56400" stroke-width="3" cx="125" cy="124" r="118"></circle>
+        <ellipse fill="none" stroke="#000" stroke-width="2" opacity=".5" cx="121" cy="134" rx="84" ry="76"></ellipse>        
+        <circle fill="#ffe3b5" stroke="#ffe3b5" stroke-width="3" cx="123" cy="124" r="63"></circle>      
+        <g name="eyes">
+          <g name="left_eye">
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                d="M58 123 A28 36 25 0 1 123 124" />
+            <ellipse cx="94" cy="120" rx="28" ry="35" fill="#fff" stroke="#fff" stroke-width="1" transform="rotate(25 94 120)"></ellipse>        
+            <circle cx="100" cy="117" r="4" fill="#000" stroke="#000" stroke-width="1"/>
+          </g>
+          <g name="right_eye">
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                    d="M122 122 A28 35 -25 0 1 180 122" />
+            <ellipse cx="152" cy="124" rx="28" ry="35" fill="#fff" stroke="#fff" stroke-width="1" transform="rotate(-25 152 124)"></ellipse>
+            <circle cx="145" cy="123" r="4" fill="#000" stroke="#000" stroke-width="1"/>
+          </g>
+        </g>
+        <path fill="#854a1e" stroke="#854a1e" stroke-width="2" 
+              d="M118 189 C 20 195 20 55 124 59
+                 M124 59 C 50 95 55 150 118 189"/>      
+        <path fill="#854a1e" stroke="#854a1e" stroke-width="2" 
+              d="M118 189 C 220 205 220 55 124 59
+                 M124 59 C 190 110 190 148 118 189"/> 
+        <path fill="none" stroke="#000" stroke-width="1"
+              d="M118 189 C 125 200 118 200 123 238"/> 
+        <path fill="none" stroke="#000" stroke-width="1"
+              d="M118 189 C 110 200 113 215 103 228"/>         
+      </g>
+    </g>
+  </svg>
+  
+</body>
+</html>

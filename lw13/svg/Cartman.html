@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>SVG</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="350">
+    <g name="Cartman">
+      <g name="legs">
+        <polygon name="pants" fill="#814527" stroke="#814527" stroke-width="7"
+                    points="56,324, 39,270,  328,270, 310,324"/>
+        <polyline name="shoes" fill="none" stroke="#2f2b3a" stroke-width="7" stroke-linecap="round"
+                    points="47,326, 80,324, 110,323, 180,325, 307,325"/>
+        <polyline name="shoes" fill="none" stroke="#2f2b3a" stroke-width="5" stroke-linecap="round"
+                    points="47,325, 80,322, 110,320, 130,320, 155,321, 180,325, 240,320, 260,320, 280,321, 317,326"/>
+      </g>
+      <g name="shirt">
+        <path fill="#ff1d3e" stroke="#ff1d3e" stroke-width="3"
+                d="M36 280, C60 310, 110 312, 140 310, 200 310, 230 310, 253 297, 
+                270 293, 290 296, 310 293, 325 290, 330 285, 335 283, 340 280,
+                343 260, 348 210, 349 200, 335 190, 325 170, 310 150, 290 150,
+                60 160, 20, 190, 10 195, 36 280 Z"/>
+        <g name="clasp">
+            <polyline fill="none" stroke="#000" stroke-width="1"
+                    points="198 310, 201 270, 200 220"/>
+            <ellipse cx="192" cy="235" rx="2" ry="3" fill="#000" stroke="#000" stroke-width="1"></ellipse>       
+            <ellipse cx="194" cy="266" rx="2" ry="4" fill="#000" stroke="#000" stroke-width="1"></ellipse> 
+            <ellipse cx="192" cy="296" rx="2" ry="4" fill="#000" stroke="#000" stroke-width="1"></ellipse>  
+        </g> 
+        <g name="hand"> 
+            <path fill="#ffe01d" stroke="#ffe01d" stroke-width="3"
+                d="M10 210, C 6 223, 6 233, 11 243, 15 252, 35 251, 45 251, 55 250, 65, 248
+                    72, 240, 68, 230, 55 220, 30, 208, 20, 206, 15, 208, 10 210Z"/>
+            <path fill="#ffe01d" stroke="#ffe01d" stroke-width="3"
+                d="M320 240, C 330 245, 340 250, 350 246, 360 240, 360 230, 358 220, 355 210,
+                354 203, 344 195, 328 198, 330 198, 318 210, 310 225, 300 228, 299 236, 310 239, 
+                313 241, 315 240, 320 240Z"/>                
+        </g>
+      </g>
+      <g name="head">
+        <ellipse cx="181" cy="122" rx="130" ry="108" fill="#fff0c5" stroke="#fff0c5" stroke-width="1"></ellipse>
+        <g name="cap">
+            <path fill="#00bac8" stroke="#00bac8" stroke-width="1" 
+                d="M51 122 C 55 -15 290 -15 308 97
+                M308 97 C 230 65 115 65 51 122"/>
+            <path fill="none" stroke="#ffe01d" stroke-width="6" stroke-linecap="round"
+                d="M308 97 C 230 65 115 65 51 122"/>
+            <path fill="#ffe01d" fill-rule="nonzero" stroke="#ffe01d" stroke-width="6"
+                d="M165 10 C 130 15 155 35 165 5
+                M165 5 C 167 27 170 22 179 20 
+                M177 17 C 183 27 187 22 197 20
+                M197 15 C 220 30 220 7 197 10
+                M197 10 C 193 2 185 2 177 10
+                M187 10 C 173 5 165 5 165 10"/>
+            <line fill="none"  stroke="#ffe01d" stroke-width="15" stroke-linecap="round"
+                x1="170" y1="13" x2="205" y2="15"/>
+        </g>
+        <g name="eyes">
+            <g name="left_eye">
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                d="M125 121 A31 38 25 0 1 190 121" />
+            <ellipse cx="158" cy="121" rx="31" ry="37" fill="#fff" stroke="#fff" stroke-width="1" transform="rotate(25 158 121)"></ellipse>        
+            <circle cx="168" cy="117" r="3" fill="#000" stroke="#000" stroke-width="1"/>
+            </g>
+            <g name="right_eye">
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                    d="M189 121 A31 38 -25 0 1 254 121" />
+            <ellipse cx="221" cy="121" rx="31" ry="37" fill="#fff" stroke="#fff" stroke-width="1" transform="rotate(-25 221 121)"></ellipse>
+            <circle cx="208" cy="117" r="3" fill="#000" stroke="#000" stroke-width="1"/>
+            </g>
+        </g>
+        <g name="mouth" fill="#000">
+            <polygon fill="#000" stroke="#000" stroke-width="3" stroke-linejoin="round"
+                points="163 184 175 181 177 180 208 183
+                208 183 207 187 198 203
+                198 203 190 203 180 199 178 199
+                178 199 163 184Z"/>
+            <line x1="204" y1="186" x2="194" y2="186" stroke="#fff" stroke-width="4"/>    
+            <line x1="192" y1="186" x2="183" y2="185" stroke="#fff" stroke-width="4"/>    
+            <line x1="181" y1="185" x2="175" y2="185" stroke="#fff" stroke-width="4"/>    
+        </g>
+        <g name="chin">
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                    d="M80 178 112 200 C165 225 235 228 290 172"/>
+            <path fill="none" stroke="#080808" stroke-width="1" opacity="0.3" 
+                    d="M168 205 Q 190 210 215 205"/>
+        </g>       
+      </g>
+    </g> 
+  </svg>  
+</body>
+</html>
